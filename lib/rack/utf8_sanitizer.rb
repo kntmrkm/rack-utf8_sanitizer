@@ -69,7 +69,7 @@ module Rack
 
     def sanitize(env)
       sanitize_rack_input(env)
-      sanitize_cookies(env)
+      # sanitize_cookies(env)
       env.each do |key, value|
         next if skip?(key)
 
